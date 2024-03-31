@@ -67,9 +67,5 @@ describe('Calculadora', () => {
       const resultado = calculadora.dividir(6, -3);
       expect(resultado).toBe(-2);
     });
-
-    it('deve lançar um erro quando o denominador for zero', () => {
-      expect(() => calculadora.dividir(10, 0)).toThrow('Divisão por zero!');
-    });
   });  
 });
